@@ -37,7 +37,7 @@ class tableBook extends React.Component{
                                 <td>{book.name}</td>
                                 <td>{book.genre}</td>
                                 <td>{book.date}</td>
-                                <td>{book.author.name}{book.author.surname}</td>
+                                <td><a href={"http://localhost:3000/author"}>{book.author.name}{book.author.surname}</a></td>
                             </tr>
                         ))
                 }

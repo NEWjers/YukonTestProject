@@ -4,9 +4,9 @@ class home extends React.Component{
     render() {
         return(
             <div align={"center"}>
-                <a href={"http://localhost:3000/author"}>Authors</a>
+                <a href={"http://localhost:3000/author"} id="button">Authors</a>
                 <br/>
-                <a href={"http://localhost:3000/book"}>Books</a>
+                <a href={"http://localhost:3000/book"} id="button">Books</a>
             </div>
         );
     }

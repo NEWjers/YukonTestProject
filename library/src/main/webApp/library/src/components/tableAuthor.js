@@ -20,11 +20,12 @@ class tableAuthor extends React.Component{
 
     render() {
         return(
-            <table align={"center"}>
+            <table align={"center"} className="tableAuthor">
                 <tbody>
                     <tr>
                         <th>Name</th>
                         <th>Surname</th>
+                        <th>Books</th>
                     </tr>
                         {
                             this.state.authors.length === 0 ?
@@ -35,6 +36,7 @@ class tableAuthor extends React.Component{
                                     <tr key={author.id}>
                                         <td>{author.name}</td>
                                         <td>{author.surname}</td>
+                                        <td><a href={"http://localhost:3000/book"}>Book list</a></td>
                                     </tr>
                                 ))
                         }

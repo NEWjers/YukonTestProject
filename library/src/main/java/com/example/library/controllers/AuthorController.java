@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("author")
-@CrossOrigin(origins = "http://localhost:3000/author")
+@CrossOrigin
 public class AuthorController {
     private final AuthorRepos authorRepos;
 
